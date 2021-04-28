@@ -16,8 +16,8 @@
 # end
 Rails.application.config.middleware.insert_before 0, Rack::Cors do 
   allow do
-    #origins 'https://zaina-app.vercel.app'
-    origins 'http://localhost:3000'
+    origins 'https://zaina-app.vercel.app'
+    #origins 'http://localhost:3000'
     resource '*',
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
